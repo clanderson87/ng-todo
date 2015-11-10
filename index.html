@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular To Do</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body ng-app="TodoApp">
+  <section ng-controller="PastaCtrl">
+    <h1>{{pasta}}</h1>
+    <div>
+      <input type = "text" ng-model= "foods">
+    </div>
+    <div>{{foods}}</div>
+  </section>
+  <section ng-controller="TodoCtrl">
+    <h1>{{title}}</h1>
+  </section>
+  <script type = "text/javascript" src="/lib/bower_components/angular/angular.min.js"></script>
+  <script type = "text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>
